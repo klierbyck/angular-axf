@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>爱鲜蜂</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+		<script type="text/javascript" src="libs/angular.js"></script>
+		<script type="text/javascript" src="libs/angular-ui-router.js"></script>
+		<script type="text/javascript" src="libs/angular-css.js"></script>
+		<script type="text/javascript" src="libs/rem.js"></script>
+		<script type="text/javascript" src="libs/swiper.js"></script>
+		<link rel="stylesheet" href="libs/swiper.css">
+		<link rel="stylesheet" href="libs/reset.css">
+		<link rel="stylesheet" type="text/css" href="src/css/index.css">
+	</head>
+	<body ng-app="AXF">
+		<ul class="footer">
+			<li ui-sref="home" ng-class="{true: 'active', false: 'normal'}[cla=='home']">
+				<span>首页</span>
+			</li>
+			<li ui-sref="market" ng-class="{true: 'active', false: 'normal'}[cla=='market']">
+				<span>闪送超市</span>
+			</li>
+			<li ui-sref="cart" ng-class="{true: 'active', false: 'normal'}[cla=='cart']">
+				<span>购物车</span>
+				<div ng-if="num>=1">{{num}}</div>
+			</li>
+			<li ui-sref="mine" ng-class="{true: 'active', false: 'normal'}[cla=='mine']">
+				<span>我的</span>
+			</li>
+		</ul>
+		<div ui-view>
+			
+		</div>
+	</body>
+	<script type="text/javascript">
+		var app = angular.module('AXF', ['ui.router', 'angularCSS']);
+		app.provider('myarray', function(){
+			this.$get = function(){
+				return {
+					//返回对象，包括重复内容及个数
+					unique: function(arr){
+						var arr1 = [],json = {};
+						for (var i = 0; i < arr.length; i++) {
+							if (!json[arr[i].id]) {
+								json[arr[i].id] = 1;
+							}else{
+								json[arr[i].id] +=1;
+							}
+						}
+						for(var n in json){
+							for(var m=0;m<arr.length;m++){
+								if(arr[m].id==n){
+									arr1.push([arr[m],json[n]]);
+									break;
+								}
+							}
+						}
+						return arr1;
+					}
+					//返回数组，为去重后的内容
+					/*unique1: function(arr){
+						var res = [];
+						var json = {};
+						for (var i = 0; i < arr.length; i++) {
+							if (!json[arr[i]]) {
+								arr.push(arr[i])
+								json[arr[i]] = 1;
+							}
+						}
+						return arr;
+					}*/
+				}
+			}
+		});
+	</script>
+	<script type="text/javascript" src="router.js"></script>
+	<script type="text/javascript" src="service.js"></script>
+	<script type="text/javascript" src="directive.js"></script>
+	<script type="text/javascript" src="src/js/cart.js"></script>
+	<script type="text/javascript" src="src/js/home.js"></script>
+	<script type="text/javascript" src="src/js/market.js"></script>
+	<script type="text/javascript" src="src/js/mine.js"></script>
+</html>

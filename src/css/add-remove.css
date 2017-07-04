@@ -1,0 +1,61 @@
+.add-remove{
+	width: 1.18rem;
+	height: 0.59rem;
+	position: absolute;
+	right: 0;
+	bottom: -0.09rem;
+}
+.add{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 0.59rem;
+	height: 0.59rem;
+	line-height: 0.59rem;
+	color: #f40;
+	text-align: center;
+	z-index: 101;
+	cursor: pointer;
+}
+.add span{
+	display: inline-block;
+	width: 0.31rem;
+	height: 0.31rem;
+	vertical-align: middle;
+	border-radius: 50%;
+	border:1px solid #e0e0e0;
+	background: #ff4300 url(../../static/imgs/add.png) no-repeat right center;
+	background-size: 200% 100%;
+}
+.number{
+	width: 0.94rem;
+	height: 0.36rem;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	line-height: 0.36rem;
+}
+.remove{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0.59rem;
+	height: 0.59rem;
+	line-height: 0.59rem;
+	color: #f40;
+	text-align: center;
+	z-index: 101;
+	cursor: pointer;
+}
+.remove span{
+	display: inline-block;
+	width: 0.31rem;
+	height: 0.31rem;
+	vertical-align: middle;
+	border-radius: 50%;
+	border:1px solid #e0e0e0;
+	background: #ff4300 url(../../static/imgs/add.png) no-repeat left center;
+	background-size: 200% 100%;
+}

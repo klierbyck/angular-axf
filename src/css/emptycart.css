@@ -1,0 +1,63 @@
+/* 购物车盒子 */
+.page3 .header{
+	background: #fff;
+	border-color: #e0e0e0;
+}
+.shop-car{
+	width: 2.35rem;
+	height: 100%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 6;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	font-size: 0.17rem;
+	font-weight: 700;
+	line-height: 0.53rem;
+	text-align: center;
+}
+.shop-car span{
+	color: #333;
+}
+.page3{
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+	position: absolute;
+	z-index: 10;
+}
+.page3 .main{
+	position: absolute;
+	top: 0.54rem;
+	left: 0;
+    right: 0;
+    bottom: 0.59rem;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+.empty{
+	width: 100%;
+	height: 1.86rem;
+	padding-top: 0.75rem;
+	text-align: center;
+	color: #999;
+}
+.empty-img{
+	width: 0.94rem;
+	height: 0.94rem;
+	margin: 0 auto;
+	background: url(../imgs/empty.png) no-repeat;
+	background-size: 0.94rem 0.94rem;
+}
+.empty p{
+	height: 0.48rem;
+	line-height: 0.48rem
+}
+.empty span{
+	display: inline-block;
+	padding: 0.05rem 0.35rem;
+	border: 1px solid #e0e0e0;
+}

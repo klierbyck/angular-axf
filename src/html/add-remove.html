@@ -1,0 +1,9 @@
+<div class="add-remove">
+	<div class="remove" ng-click="nobuy()" ng-if="(item[1] || item.count)>0">
+		<span></span>
+	</div>
+	<span class="number" ng-bind="item[1] || item.count" ng-if="(item[1] || item.count)>0"></span>
+	<div class="add" ng-click="buy()">
+		<span></span>
+	</div>
+</div>

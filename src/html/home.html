@@ -1,0 +1,37 @@
+<div class="page1">
+	<header-directive>{{home}}</header-directive>
+	<div class="main">
+		<div class="swiper-container">
+        	<div class="swiper-wrapper">
+	            <div class="swiper-slide" ng-repeat="item in one" repeat-finished><img ng-src="{{item.activity.img}}"></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	    </div>
+		<ul class="theme">
+			<li ng-repeat="item in two"> 
+				<p ng-style="{'backgroundImage': 'url({{item.activity.img}})'}"></p>
+				<span>{{item.activity.name}}</span>
+			</li>
+		</ul>
+		<ul class="brands">
+			<li ng-repeat="item in four" ng-style="{'backgroundImage': 'url({{item.activity.img}})'}"></li>
+		</ul>
+		<div class="business">
+			<ul class="business-head">
+				<li ng-repeat="item in five0" ng-style="{'backgroundImage': 'url({{item.chead_detail.img}})'}"></li>
+			</ul>
+			<ul class="business-activity">
+				<li ng-repeat="item in five1" ng-style="{'backgroundImage': 'url({{item.cactivity_detail.img}})'}"></li>
+			</ul>
+			<ul class="icons">
+				<li ng-repeat="item in five2" ng-style="{'backgroundImage': 'url({{item.cicons_detail.img}})'}">
+					<span>{{item.cicons_detail.name}}</span>
+				</li>
+			</ul>
+			<ul class="sences">
+				<li ng-repeat="item in five3" ng-style="{'backgroundImage': 'url({{item.cscene_detail.img}})'}"></li>
+			</ul>
+		</div>	
+	</div>
+</div>

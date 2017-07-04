@@ -1,0 +1,164 @@
+/* 首页盒子 */
+.page1{
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+	position: absolute;
+	z-index: 10;
+}
+.page1 .main{
+	position: absolute;
+	top: 0.54rem;
+	left: 0;
+    right: 0;
+    bottom: 0.59rem;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+.swiper-container {
+    width: 100%;
+    height: 1.4rem;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 0px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 1.4rem;
+}
+.theme{
+	margin: 0.12rem 0;
+	padding: 3%;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 0;
+    background: #fff;
+}
+.theme li{
+	width: 25%;
+	height: 0.81rem;
+	display: inline-block;
+}
+.theme li p{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 0.6rem;
+}
+.theme li span{
+	display: block;
+	text-align: center;
+	font-size: 0.12rem;
+	color: #353d44;
+	line-height: 0.21rem;
+}
+.brands{
+	width: 100%;
+	margin: 0.12rem 0;
+	font-size: 0;
+}
+.brands li{
+	display: inline-block;
+	width: 33.33%;
+	box-sizing: border-box;
+	border-right: 1px solid #e0e0e0;
+	padding-bottom: 1.09rem;
+}
+.brands li{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+.business{
+	width: 100%;
+	margin: 0.12rem 0;
+	background: #fff;
+}
+.business-head{
+	width: 100%;
+	height: 0.56rem;
+}
+.business-head li{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	padding-bottom: 0.56rem;
+}
+.business-activity{
+	height: 0.8rem;
+	margin: 0 0.06rem;
+	font-size: 0;
+}
+.business-activity li{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 50%;
+	border: 0.06rem solid transparent;
+	padding-bottom: 0.68rem;
+}
+.business-activity li{
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.icons{
+	width: 100%;
+	height: 1.04rem;
+	font-size: 0;
+}
+.icons li{
+	width: 25%;
+	height: 100%;
+	display: inline-block;
+	padding: 0.64rem 0.12rem 0.12rem;
+	box-sizing: border-box;
+}
+.icons li span{
+	display: block;
+	text-align: center;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 0.12rem;
+    line-height: 0.28rem;
+    color: #333;
+}
+.icons li{   
+	background-repeat: no-repeat;
+	background-position: top center; 
+	background-size: auto 0.64rem;
+}
+.sences{
+	width: 100%;
+	height: 0.76rem;
+	font-size: 0;
+}
+.sences li{
+	width: 50%;
+	height: 0.76rem;
+	box-sizing: border-box;
+	display: inline-block;
+}
+.sences li:nth-of-type(1){
+	border-top: 1px solid #e0e0e0;
+	border-right: 1px solid #e0e0e0;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.sences li:nth-of-type(2){
+	border-top: 1px solid #e0e0e0;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}

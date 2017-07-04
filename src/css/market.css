@@ -1,0 +1,222 @@
+/* 闪送超市盒子 */
+.page2{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: absolute;
+	z-index: 10;
+}
+.page2 .main {
+    position: absolute;
+    top: 0.54rem;
+    left: 0;
+    right: 0;
+    bottom: 0.59rem;
+}
+.product-class-left{
+	float: left;
+	width: 23.75%;
+	height: 100%;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+.product-class-left li{
+	box-sizing: border-box;
+	height: 0.47rem;
+	line-height: 0.47rem;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: center;
+	color: #6d6d6d;
+	font-size: 0.14rem;
+	position: relative;
+	background: #efefef;
+}
+.product-class-left li{
+	background-position: top right;
+	background-repeat: no-repeat; 
+	background-size: auto 70%;
+}
+.product-class-left .li-focus::before{
+	content: "";
+	border-left: 0.06rem solid #ffd600;
+	position: absolute;
+	width: 0;
+	height: 0.41rem;
+	left: 0;
+	top: 0.03rem;
+}
+.product-class-right{
+	float: right;
+	width: 75%;
+	height: 100%;
+	position: relative;
+}
+.product-list-tit{
+	width: 100%;
+	height: 0.46rem;
+	border-bottom: 1px solid #e0e0e0;
+	font-size: 0;
+	position: absolute;
+}
+.product-list-tit li{
+	font-size: 0.14rem;
+	width: 50%;
+	height: 0.46rem;
+	line-height: 0.46rem;
+	text-align: center;
+	display: inline-block;
+	color: #6d6d6d;
+}
+.product-list-tit li:nth-of-type(2){
+	width: 0;
+	position: absolute;
+	height: 0.2rem;
+	top: 0.13rem;
+	left: 50%;
+	border-left: 1px solid #e0e0e0;
+}
+.product-list-tit li:nth-of-type(1)::after{
+	content: "";
+	width: 0.14rem;
+	height: 0.46rem;
+	display: inline-block;
+    vertical-align: top;
+    background: url(../../static/imgs/down.png) no-repeat center center;
+    background-size: 12px;
+}
+.product-list-tit li:nth-of-type(3)::after{
+	content: "";
+	width: 0.14rem;
+	height: 0.46rem;
+	display: inline-block;
+    vertical-align: top;
+    background: url(../../static/imgs/down.png) no-repeat center center;
+    background-size: 12px;
+}
+.product-list-all{
+	display: inline-block;
+	width: 100%;
+	font-size: 0.14rem;
+	position: absolute;
+	left: 0;
+	top: 0.47rem;
+	z-index: 15;
+	background: #fff;
+	padding-bottom: 0.09rem;
+	display: none;
+}
+.product-list-all li{
+	width: 0.56rem;
+	height: 0.21rem;
+	padding: 0.05rem 0.09rem;
+	border: 1px solid #e0e0e0;
+	margin: 0.09rem 0 0 0.09rem;
+	border-radius: 5px;
+}
+.product-list-zong{
+	width: 100%;
+	font-size: 0.14rem;
+	position: absolute;
+	left: 0;
+	top: 0.47rem;
+	z-index: 15;
+	background: #fff;
+	padding-bottom: 0.09rem;
+	display: none;
+}
+.product-list-zong li{
+	display: inline-block;
+	width: 0.56rem;
+	height: 0.21rem;
+	padding: 0.05rem 0.09rem;
+	border: 1px solid #e0e0e0;
+	margin: 0.09rem 0 0 0.09rem;
+	border-radius: 5px;
+}
+.product-class-right .sele{
+	border: 1px solid #ffd600;
+}
+.product-list{
+	box-sizing: border-box;
+	position: absolute;
+	top: 0.47rem;
+	bottom: 0rem;
+    font-size: 0;
+}
+.zhezhao{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(0, 0, 0, 0.2);
+	display: none;
+}
+.product-detaile-list{
+	width: 100%;
+	height: 100%;
+	font-size: 0.14rem;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+.product-detaile-list li{
+	width: 100%;
+	height: 0.94rem;
+	padding: 0.06rem;
+	border-bottom: 1px solid #e0e0e0;
+}
+.product-detaile-list li .product-detaile-img{
+	width: 0.94rem;
+	float: left;
+	background-repeat: no-repeat;
+	background-position:  center center;
+	background-size: 0.94rem 0.94rem;
+	padding-bottom: 0.94rem;
+}
+.product-detaile-info{
+	font-size: 0.14rem;
+	width: 1.76rem;
+	float: right;
+	position: relative;
+}
+.product-detaile-info p:nth-of-type(1){
+	color: #232b33;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 0.23rem;
+}
+.product-detaile-info p:nth-of-type(2){
+	line-height: 0.23rem;
+}
+.product-detaile-info p:nth-of-type(2) span:nth-of-type(1){
+	border: 1px solid red;
+    display: inline-block;
+    color: red;
+    font-size: 0.12rem;
+    line-height: 0.12rem;
+    padding: 0.02rem 0.04rem;
+    margin-right: 0.04rem;
+    border-radius: 4px;
+}
+.product-detaile-info .zeng{
+	font-size: 0.12rem;
+	background-color: red;
+    color: #fff;
+    padding: 0 0.04rem;
+    border: 1px solid red;
+    border-radius: 6px;
+}
+.product-detaile-info p:nth-of-type(3){
+	color: #999;
+	white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 0.23rem;
+}
+.product-detaile-info>span:nth-of-type(1){
+	color: #ff3800;
+}
+.product-detaile-info>span:nth-of-type(2){
+	color: #999;
+	text-decoration: line-through;
+}
+

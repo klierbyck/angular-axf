@@ -1,0 +1,29 @@
+/* 我的盒子 */
+.page4{
+	width: 100%;
+	height: 100%;
+	background-color: #efefef;
+	position: absolute;
+	z-index: 10;
+}
+.page4 .main{
+	position: absolute;
+	top: 0;
+	left: 0;
+    right: 0;
+    bottom: 0.59rem;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+.user-info{
+	box-sizing: border-box;
+	width: 100%;
+	height: 1.17rem;
+	padding-top: 0.23rem;
+	padding-left: 1.05rem;
+	background: #ffd600 url(../../static/imgs/user.png) no-repeat 0.18rem center;
+	background-size: auto 0.70rem;
+	font-size: 0.16rem;
+	font-weight: 700;
+	color: #fff;
+}

@@ -1,0 +1,56 @@
+<div class="page2" ng-init="curIndex = 0">
+	<header-directive></header-directive>
+	<div class="main">
+		<div class="product-class-left clearfix">
+			<ul>
+				<li ng-repeat="item in category" ng-click="chooseGoods()" ng-style="{'backgroundImage':'url({{item.flag}})'}" ng-class="{'li-focus': curIndex == $index}">{{item.name}}</li>
+			</ul>
+		</div>
+		<div class="product-class-right clearfix">
+			<div class="product-list-tit">
+				<ul>
+					<li>全部分类&nbsp;</li>
+					<li></li>
+					<li>综合排序&nbsp;</li>
+				</ul>
+			</div>
+			<ul class="product-list-all">
+				<li class="sele">全部分类</li>
+			</ul>
+			<ul class="product-list-zong">
+				<li class="sele">综合排序</li>
+				<li>销量最高</li>
+				<li>价格最低</li>
+				<li>价格最高</li>
+			</ul>
+			<div class="product-list">
+				<div class="zhezhao"></div>
+				<ul class="product-detaile-list">
+					<li ng-repeat="item in goods">
+						<div class="product-detaile-img" ng-style="{backgroundImage:'url({{item.img}})'}">	
+						</div>
+						<div class="product-detaile-info">
+							<p>{{item.long_name}}</p>
+							<p>
+								<span>精选</span>
+							</p>
+							<p>{{item.specifics}}</p>
+							<span>&yen;{{item.partner_price}}</span>
+							<span>&yen;{{item.market_price}}</span>
+							<!-- <div class="add-remove">
+								<div class="remove" ng-click="nobuy()">
+									<span></span>
+								</div>
+								<span class="number">10</span>
+								<div class="add" ng-click="buy()">
+									<span></span>
+								</div>
+							</div> -->
+							<addremove-directive></addremove-directive>
+						</div>	
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,70 @@
+<div class="page3">
+	<div class="header">
+		<div class="shop-car">
+			<span>购物车</span>
+		</div>
+	</div>
+	<div class="main">
+		<div class="address">
+			<table>
+				<tr>
+					<td>收<span>a</span>货<span>a</span>人</td>
+					<td>ww</td>
+					<td rowspan="3">修改</td>
+				</tr>
+				<tr>
+					<td>电<span>哈哈</span>话</td>
+					<td>ww</td>
+					<!-- <td></td> -->
+				</tr>
+				<tr>
+					<td>收货地址</td>
+					<td>eeeahaa啊哈哈哈哈哈哈哈哈哈哈啊哈啊所代表</td>
+					<!-- <td></td> -->
+				</tr>
+			</table>
+		</div>
+		<div class="cart-sscs">
+			闪送超市
+			<span>凑单专区</span>
+			<p>¥0起送，22:00前满¥30免运费</p>
+		</div>
+		<div class="cart-time">
+			<p>收货时间</p>
+			<div>30分钟送达</div>
+			<span>可预订</span>
+		</div>
+		<div class="beizhu">
+			<p>收货时间</p>
+			<input type="text" maxlength="100" placeholder="可输入100字以内特殊要求内容">
+		</div>
+		<div class="buy-products">
+			<table>
+				<tr ng-repeat="item in goods">
+					<td></td>
+					<td ng-style="{'backgroundImage': 'url({{item[0].img}})'}"></td>
+					<td>
+						<p>{{item[0].name}}</p>
+						<p>&yen;{{item[0].price}}</p>
+						<!-- <div class="add-remove">
+							<div class="remove">
+								<span></span>
+							</div>
+							<span class="numbers">10</span>
+							<div class="add">
+								<span></span>
+							</div>
+						</div> -->
+						<addremove-directive></addremove-directive>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="all-ready">
+			<span>全选</span>
+			共&nbsp;:&nbsp;
+			<span>{{money||0 | currency:'￥':2}}</span>
+			<div>选好了</div>
+		</div>
+	</div>
+</div>
