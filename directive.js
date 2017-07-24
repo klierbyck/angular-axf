@@ -25,7 +25,9 @@ app.directive('repeatFinished', function(){
 	return {
 		restrict: 'ECMA',
 		controller: function($scope){
-			$scope.$emit('ngRepeatFinished');
+			($scope.$last == true){
+				$scope.$emit('ngRepeatFinished');
+			}
 		}
 	}
 })
