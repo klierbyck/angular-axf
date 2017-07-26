@@ -8,5 +8,5 @@ app.get("*", function(req,res){
 
 //设置启动端口
 app.listen(9999, function(){
-	console.log("端口为9999的node服务器启动成功,请使用此端口登录美国国家安全局!!!");
+	console.log("端口为9999的node服务器启动成功,请使用此端口登录!!!");
 });
